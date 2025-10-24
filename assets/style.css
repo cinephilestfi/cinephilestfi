@@ -98,6 +98,7 @@ body {
 
 .firstSection {
     height: 100%;
+    padding: 8%;
 }
 
 .box-main {
@@ -120,41 +121,84 @@ body {
     justify-content: center;
 }
 
+/* ------------------------------------- */
+/* UPDATED SOCIAL BUTTON STYLES FOR UI/UX */
+/* ------------------------------------- */
 
-.btn-insta {
-    background-color: pink;
-    border-color: pink;
-    background-color: #ff66b2;
-    border-color: #ff66b2;
+/* Container forces vertical stacking */
+.social-links-container {
+    display: flex;
+    flex-direction: column; /* Force vertical stacking */
+    align-items: center; /* Center buttons horizontally */
+    gap: 15px; /* Adds space between the buttons */
+    margin-top: 20px; 
+    font-family: "Ubuntu", sans-serif;
+}
+
+/* Base style for all new social buttons (applied to <a> tag) */
+.btn-social {
+    display: flex; 
+    align-items: center; 
+    justify-content: center; /* Center content (icon and text) within the button */
+    width: 80%; /* Consistent width for desktop/mobile */
+    max-width: 300px; 
+    text-decoration: none; 
+    padding: 10px 20px;
+    border-radius: 8px;
+    font-weight: bold;
+    font-size: 1.1em; /* Larger text */
+    letter-spacing: 0.5px; 
+    text-transform: uppercase; /* Professional look */
+    transition: all 0.3s ease;
+    cursor: pointer;
+    margin: 0; 
+    border: none;
+    color: white; /* Default text color for all buttons */
+}
+
+/* Style for the icon */
+.btn-social i {
+    font-size: 1.2em; 
+    margin-right: 10px; 
     color: white;
+}
+
+/* Instagram (Brand Color: Magenta/Pink gradient approximation) */
+.btn-insta {
+    background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
 }
 
 .btn-insta:hover {
-    background-color: pink;
-    border-color: pink;
+    box-shadow: 0 0 15px rgba(255, 100, 150, 0.8);
+    transform: translateY(-2px);
 }
 
+/* YouTube (Brand Color: Red) */
 .btn-yt {
-    background-color: red;
-    border-color: red;
-    color: white;
+    background-color: #ff0000;
 }
 
 .btn-yt:hover {
-    background-color: #ff4d4d;
-    border-color: #ff4d4d;
+    background-color: #cc0000;
+    box-shadow: 0 0 15px rgba(255, 0, 0, 0.5);
+    transform: translateY(-2px);
 }
 
+/* X (Twitter) (Brand Color: Black/Dark Grey) */
 .btn-x {
-    background-color: black;
-    border-color: black;
-    color: white;
+    background-color: #1a1a1a; 
+    border: 2px solid #ffffff; 
 }
 
 .btn-x:hover {
-    background-color: #333;
-    border-color: #333;
+    background-color: #333333;
+    border-color: #cccccc;
+    transform: translateY(-2px);
 }
+
+/* ------------------------------------- */
+/* END UPDATED SOCIAL BUTTON STYLES */
+/* ------------------------------------- */
 
 
 .secondHalf img {
@@ -413,6 +457,19 @@ body {
 
     .v-class-resp {
         opacity: 0;
+    }
+
+    /* Mobile styles for the social links. They already stack vertically due to flex-direction: column, */
+    /* but we center the container to make sure it looks good on all small screens. */
+    .social-links-container {
+        align-items: center; 
+        width: 100%; 
+    }
+
+    .btn-social {
+        width: 80%; 
+        max-width: 300px; 
+        justify-content: center;
     }
 
     .section {
