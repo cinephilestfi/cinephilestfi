@@ -62,15 +62,20 @@ body {
 
 .rightNav {
     width: 30%;
-    text-align: right;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 10px;
     padding: 0px 23px;
+    font-family: "Ubuntu", sans-serif;
 }
 
 #search {
-    padding: 5px;
+    padding: 8px 12px;
     font-size: 17px;
     border: 2px solid gray;
     border-radius: 9px;
+    height: 40px;
 }
 
 .background {
@@ -137,7 +142,6 @@ body {
 
 .btn-yt:hover {
     background-color: #ff4d4d;
-    /* Lighter red on hover */
     border-color: #ff4d4d;
 }
 
@@ -149,7 +153,6 @@ body {
 
 .btn-x:hover {
     background-color: #333;
-    /* Slightly lighter black on hover */
     border-color: #333;
 }
 
@@ -182,11 +185,12 @@ body {
 }
 
 .btn-sm {
-    padding: 6px 10px;
-    margin: auto;
-    vertical-align: middle;
     color: white;
     background: none;
+    padding: 0 16px;
+    height: 40px;
+    vertical-align: middle;
+    cursor: pointer;
 }
 
 .section {
@@ -320,11 +324,8 @@ body {
 .section-divider {
     height: 2px;
     background-color: #ffcc00;
-    /* Gold line color */
     margin: 0px 0px;
-    /* Space before and after the line */
     box-shadow: 0 1px 5px rgba(0, 0, 0, 0.2);
-    /* Optional shadow for a subtle effect */
 }
 
 .text-footer {
@@ -379,10 +380,14 @@ body {
         height: 450px;
         flex-direction: column;
         transition: all 0.7s ease-out;
+        text-align: center;
     }
 
     .rightNav {
-        text-align: center;
+        flex-direction: column;
+        width: 90%;
+        margin: 10px auto;
+        align-items: center;
     }
 
     .box-main {
@@ -392,11 +397,15 @@ body {
 
     #search {
         width: 100%;
+        max-width: 400px;
+        height: 45px;
+        margin: 5px 0;
     }
 
     .burger {
         display: block;
     }
+
 
     .h-nav-resp {
         height: 72px;
