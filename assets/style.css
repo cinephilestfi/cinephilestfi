@@ -493,6 +493,8 @@ body {
 
     .firstSection {
         max-width: 100%;
+        padding-top: 10%;
+        padding-bottom: 30%;
     }
 
     .about-section {
