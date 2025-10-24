@@ -278,6 +278,14 @@ body {
     color: orangered;
 }
 
+.about-section a:hover{
+    color: teal;
+}
+
+.about-section p{
+    padding: 10px 0px
+}
+
 .about-section-left {
     flex-direction: row-reverse;
 }
@@ -285,7 +293,6 @@ body {
 .paras {
     padding: 0px 65px;
 }
-
 
 .sectionTag {
     color: white;
