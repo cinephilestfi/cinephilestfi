@@ -198,6 +198,17 @@ body {
     padding: 40px 40px;
 }
 
+.star-link {
+    text-decoration: none;
+    color: inherit;
+    transition: color 0.3s ease;
+    display: inline-block;
+}
+
+.star-link:hover p {
+    color: red;
+}
+
 .section-left {
     flex-direction: row-reverse;
 }
@@ -226,6 +237,7 @@ body {
 .paras {
     padding: 0px 65px;
 }
+
 
 .sectionTag {
     color: white;
@@ -323,7 +335,7 @@ body {
     align-items: center;
     justify-content: center;
     color: white;
-    font-size: x-large;
+    font-size: large;
 }
 
 .burger {
