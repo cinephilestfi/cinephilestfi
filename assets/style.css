@@ -509,4 +509,8 @@ body {
         flex-direction: column-reverse;
         text-align: center;
     }
+
+    .section-title{
+        font-size: 50px;
+    }
 }
